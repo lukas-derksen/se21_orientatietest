@@ -9,21 +9,21 @@ namespace SoftwareToets
     public abstract class Verkoop : IInkomsten
     {
         //Properties
-        public int Aantal { get; private set; }
-        public decimal Bedrag { get; private set; }
-        public DateTime Tijdstip { get; private set; }
-        public BTWTarief BTWTArief { get; private set; }
-        public decimal Prijs { get; private set; }
+        public int Aantal { get; protected set; }
+        public decimal Bedrag { get; protected set; }
+        public DateTime Tijdstip { get; protected set; }
+        public abstract BTWTarief BTWTArief { get; }
+        public abstract decimal Prijs { get; }
 
         //Constructor
         public Verkoop(int aantal)
         {
-
+            this.Aantal = aantal;
         }
 
         public override string ToString()
         {
-            return Aantal + " - " + "EU" + Bedrag + " - " + Tijstip;
+            return Aantal + " - " + "EU" + Bedrag + " - " + Tijdstip;
         }
     }
 }

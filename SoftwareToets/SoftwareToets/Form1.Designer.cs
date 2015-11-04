@@ -107,6 +107,7 @@
             this.btnNieuweVerhuringToevoegen.TabIndex = 3;
             this.btnNieuweVerhuringToevoegen.Text = "Toevoegen";
             this.btnNieuweVerhuringToevoegen.UseVisualStyleBackColor = true;
+            this.btnNieuweVerhuringToevoegen.Click += new System.EventHandler(this.btnNieuweVerhuringToevoegen_Click);
             // 
             // label1
             // 
@@ -219,6 +220,7 @@
             this.btnNieuweVerkoopToevoegen.TabIndex = 7;
             this.btnNieuweVerkoopToevoegen.Text = "Toevoegen";
             this.btnNieuweVerkoopToevoegen.UseVisualStyleBackColor = true;
+            this.btnNieuweVerkoopToevoegen.Click += new System.EventHandler(this.btnNieuweVerkoopToevoegen_Click);
             // 
             // label4
             // 
@@ -256,7 +258,7 @@
             this.cbNieuweVerkoop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNieuweVerkoop.FormattingEnabled = true;
             this.cbNieuweVerkoop.Items.AddRange(new object[] {
-            "Sterkedrank",
+            "Sterke drank",
             "Warme drank",
             "Frisdrank"});
             this.cbNieuweVerkoop.Location = new System.Drawing.Point(6, 19);

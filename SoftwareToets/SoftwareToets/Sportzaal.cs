@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace SoftwareToets
 {
-    public class Sportzaal
+    public class Sportzaal : Verhuur
     {
         //Properties
-        readonly BTWTarief BTWTarief;
-        readonly decimal PrijsPerUur;
-        
+        public override BTWTarief BTWTarief { get { return 0; } }
+        public override decimal PrijsPerUur { get { return 0; } }
+
         //Constructor
         public Sportzaal(DateTime tijdstip, int urenverhuurd)
+            : base(tijdstip, urenverhuurd)
         {
-
+            
         }
         public override string ToString()
         {

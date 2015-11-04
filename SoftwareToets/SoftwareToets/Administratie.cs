@@ -8,25 +8,25 @@ namespace SoftwareToets
 {
     public class Administratie
     {
-        //Fields
-        private List<Verkoop> verkopen;
-        private List<Verhuur> verhuringen;
+        //Properties
+        public List<Verkoop> Verkopen { get; private set; }
+        public List<Verhuur> Verhuringen { get; private set; }
 
         //Constructor
         public Administratie() 
         {
-            verkopen = new List<Verkoop>();
-            verhuringen = new List<Verhuur>();
+            Verkopen = new List<Verkoop>();
+            Verhuringen = new List<Verhuur>();
         }
 
         //Methods
         public void VoegToe(Verhuur verhuur)
         {
-
+            Verhuringen.Add(verhuur);
         }
         public void VoegToe(Verkoop verkoop)
         {
-
+            Verkopen.Add(verkoop);
         }
     }
 }

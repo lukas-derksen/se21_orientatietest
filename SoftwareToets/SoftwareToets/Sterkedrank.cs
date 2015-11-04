@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace SoftwareToets
 {
     public class Sterkedrank : Verkoop
-    {        //Constructor
+    {
+        //Properties
+        public override BTWTarief BTWTArief { get { return 0; } }
+        public override decimal Prijs { get { return 0; } }
+
+        //Constructor
         public Sterkedrank(int aantal) : base(aantal)
         {
 

@@ -9,21 +9,22 @@ namespace SoftwareToets
     public abstract class Verhuur : IInkomsten
     {
         //Properties
-        public int UrenVerhuurd { get; private set; }
-        public decimal Bedrag { get; private set; }
-        public DateTime Tijdstip { get; private set; }
-        public BTWTarief BTWTarief { get; private set; }
-        public decimal PrijsPerUur { get; private set; }
+        public int UrenVerhuurd { get; protected set; }
+        public decimal Bedrag { get; protected set; }
+        public DateTime Tijdstip { get; protected set; }
+        public abstract BTWTarief BTWTarief { get; }
+        public abstract decimal PrijsPerUur { get; }
 
         //Constructor
         public Verhuur(DateTime tijdstip, int urenVerhuurd)
         {
-
+            this.Tijdstip = tijdstip;
+            this.UrenVerhuurd = urenVerhuurd;
         }
 
         public override string ToString()
         {
-            return UrenVerhuurd + " - " Tijdstip + " - " + Bedrag;
+            return UrenVerhuurd + " - " + Tijdstip + " - " + Bedrag;
         }
     }
 }
