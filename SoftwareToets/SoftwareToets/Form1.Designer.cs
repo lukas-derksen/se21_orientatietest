@@ -144,7 +144,9 @@
             this.cbNieuweVerhuring.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNieuweVerhuring.FormattingEnabled = true;
             this.cbNieuweVerhuring.Items.AddRange(new object[] {
-            "Feestzaal"});
+            "Feestzaal",
+            "Kleine zaal",
+            "Sportzaal"});
             this.cbNieuweVerhuring.Location = new System.Drawing.Point(6, 19);
             this.cbNieuweVerhuring.Name = "cbNieuweVerhuring";
             this.cbNieuweVerhuring.Size = new System.Drawing.Size(125, 21);
@@ -254,7 +256,9 @@
             this.cbNieuweVerkoop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNieuweVerkoop.FormattingEnabled = true;
             this.cbNieuweVerkoop.Items.AddRange(new object[] {
-            "Sterkedrank"});
+            "Sterkedrank",
+            "Warme drank",
+            "Frisdrank"});
             this.cbNieuweVerkoop.Location = new System.Drawing.Point(6, 19);
             this.cbNieuweVerkoop.Name = "cbNieuweVerkoop";
             this.cbNieuweVerkoop.Size = new System.Drawing.Size(125, 21);
@@ -370,7 +374,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Sporthal De Ploeterende Panda";
+            this.Text = "Sporthal De Ploeterende Panda - Lukas Derksen";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNieuweVerhuringUren)).EndInit();
