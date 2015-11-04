@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SoftwareToets
 {
-    public interface IInkomsten
+    public interface IInkomsten : IComparable<IInkomsten>
     {
-        /*
-        public decimal Bedrag { get; }
-        public BTWTarief BTWTarief { get; }
-        public DateTime Tijdstip { get; }
-         * */
+        
+        decimal Bedrag { get; }
+        BTWTarief BTWTarief { get; }
+        DateTime Tijdstip { get; }
+
+        abstract int CompareTo(IInkomsten inkomst);
     }
 }
